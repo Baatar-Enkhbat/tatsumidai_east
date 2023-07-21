@@ -1,0 +1,2227 @@
+:root {
+    --main-color: #e85471;
+    --blue-color: #c5e6eb;
+    --secondary-color: #efcfd3;
+    --loc-color: #e4e1f0;
+    --gray-color: #edeceb;
+}
+
+
+/*  ----------  fonts  ----------  */
+
+
+/* 価格 */
+
+.archivo {
+    font-family: 'Archivo', sans-serif;
+}
+
+
+/* main */
+
+.notoSerifJP {
+    font-family: 'Noto Serif JP', serif;
+}
+
+.font_roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* number */
+
+.sawarabiGothic {
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+@font-face {
+    font-family: 'A-OTFFolkProB.otf';
+    src: url('../fonts/A-OTFFolkProB.otf') format('opentype');
+}
+
+.a-OTFFolkProB {
+    font-family: 'A-OTFFolkProB.otf';
+}
+
+@font-face {
+    font-family: 'A-OTFFolkProR';
+    src: url('../fonts/A-OTFFolkProR.otf') format('opentype');
+}
+
+.a-OTFFolkProR {
+    font-family: 'A-OTFFolkProR';
+}
+
+
+/*  ----------  fonts  ----------  */
+
+
+/*  ----------  utility class  ----------  */
+
+
+/* backgound color */
+
+.main-bg {
+    background: var(--main-color);
+}
+
+.blue-bg {
+    background: var(--blue-color);
+}
+
+.loc-bg {
+    background: var(--loc-color);
+}
+
+.gray-bg {
+    background: var(--gray-color);
+}
+
+
+/* text color */
+
+.main-txt {
+    color: var(--main-color);
+}
+
+
+/* main space */
+
+.ts-main {
+    padding-top: 10rem;
+}
+
+.ts-main-second {
+    padding-top: 5rem;
+}
+
+.bs-main {
+    padding-bottom: 5rem;
+}
+
+.title-main {
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+    display: inline-block;
+    font-size: 2.5rem;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #abbed0 50%, #c0d1df 50%) 1;
+}
+
+.title-sub {
+    position: relative;
+    margin: 0 auto;
+    width: 20rem;
+    height: 10rem;
+    background: var(--loc-color);
+    border-radius: 10rem 10rem 0 0;
+}
+
+.title-sub-text {
+    position: absolute;
+    width: 100%;
+    font-size: 2rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-build {
+    position: relative;
+    margin: 0 auto;
+    width: 20rem;
+    height: 10rem;
+    background: white;
+    border-radius: 10rem 10rem 0 0;
+}
+
+.title-build-text {
+    position: absolute;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    width: 70%;
+    letter-spacing: 5px;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #abbed0 50%, #c0d1df 50%) 1;
+}
+
+.img-btn {
+    width: 600px;
+}
+
+.sidebtn {
+    position: fixed;
+    top: 50%;
+    bottom: auto;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    width: 51px;
+    z-index: 100;
+    text-align: right;
+}
+
+.sidebtn>a {
+    display: block;
+    /* line-height: 4; */
+    width: 51px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-top: 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    height: auto;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #e85471;
+    opacity: 1;
+}
+
+
+/*--------------------
+ Back to Top Button
+---------------------*/
+
+.scrollToTopBtn {
+    background: none;
+    color: #fff;
+    mix-blend-mode: difference;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease
+}
+
+.scrollToTopBtn i {
+    font-size: 3rem;
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+
+/* other */
+
+.nawch {
+    width: 25%;
+}
+
+.tereg {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    transform: translateY(50%);
+    width: 10%;
+}
+
+.bear {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    transform: translateY(50%);
+    width: 10%;
+}
+
+.biuld-flower {
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    width: 10%;
+}
+
+.woman {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    transform: translateY(20%);
+    width: 15%;
+    z-index: 1;
+}
+
+.golf {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 10%;
+    z-index: 1;
+}
+
+.nawch2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    z-index: 1;
+}
+
+.famely {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 20%;
+    z-index: 1;
+}
+
+.flower {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 10%;
+    z-index: 1;
+}
+
+.access-nawch {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 20%;
+    z-index: 1;
+}
+
+.child {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    width: 10%;
+    z-index: 1;
+}
+
+.nawch_l {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    z-index: 1;
+}
+
+.dad {
+    position: absolute;
+    bottom: -4%;
+    left: 10%;
+    width: 10%;
+    z-index: 1;
+}
+
+.isu {
+    position: absolute;
+    bottom: -4%;
+    right: 10%;
+    width: 20%;
+    z-index: 1;
+}
+
+.bg_blue {
+    background: #23a5df;
+}
+
+.bg_orange {
+    background: #f4a000;
+}
+
+.bg_pink {
+    background: #ec7592;
+}
+
+.txt_blue {
+    color: #23a5df;
+}
+
+.txt_orange {
+    color: #f4a000;
+}
+
+.txt_pink {
+    color: #ec7592;
+}
+
+
+/*  ----------  utility class  ----------  */
+
+
+/*  ----------  top  ----------  */
+
+.top {
+    background: url('../images/top/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+}
+
+.top_info_01 {
+    position: absolute;
+    width: 40%;
+    bottom: 73%;
+    left: 6%;
+}
+
+.top_info_02 {
+    position: absolute;
+    width: 28%;
+    bottom: 50%;
+    left: 4%;
+}
+
+.top_info_03 {
+    position: absolute;
+    width: 38%;
+    bottom: 40%;
+    left: 0;
+}
+
+.top_info_04 {
+    position: absolute;
+    width: 35%;
+    bottom: 25%;
+    left: 3.5%;
+}
+
+.top_info_05 {
+    position: absolute;
+    width: 75%;
+    bottom: 7%;
+    left: 4%;
+}
+
+.top_info_06 {
+    position: absolute;
+    width: 10%;
+    bottom: 5%;
+    right: 4%;
+}
+
+.top-ln {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    transform: translateY(50%);
+    z-index: 1;
+}
+
+.top-logo {
+    width: 90%;
+}
+
+.top-no {
+    width: 70%;
+}
+
+.sp-logo {
+    width: 60%;
+}
+
+
+/*  ----------  top  ----------  */
+
+
+/*  ----------  concept  ----------  */
+
+.concept-sub-comment {
+    font-size: 2rem;
+}
+
+.concep-txt {
+    font-size: 1.3rem;
+    line-height: 2.5;
+}
+
+.gift {
+    max-width: 700px;
+}
+
+
+/*  ----------  concept  ----------  */
+
+
+/*  ----------  compartment  ----------  */
+
+.compartment-box {
+    padding-left: 5rem;
+}
+
+.compartment-title {
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+.compartment-txt {
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+.kukaku-img {
+    max-width: 500px;
+}
+
+
+/*  ----------  compartment  ----------  */
+
+
+/*  ----------  build  ----------  */
+
+.build-box {
+    position: relative;
+    background: var(--secondary-color);
+}
+
+.build-box-txt {
+    position: absolute;
+    left: 10rem;
+    bottom: 2rem;
+}
+
+.build-box-title {
+    font-size: 1.2rem;
+}
+
+.build-box-sub {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #231815;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.build-box-desc {
+    font-size: 1rem;
+    line-height: 2.5;
+}
+
+
+/* madori text box */
+
+.madori-img {
+    max-width: 300px;
+}
+
+.madori-text-box {
+    padding-left: 1rem;
+}
+
+.madori-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.madori-cost {
+    font-size: 1.2rem;
+}
+
+.madori-plan {
+    background: #231815;
+    color: white;
+    padding: 0.3rem 0.5rem;
+}
+
+.madori-cost-number {
+    font-size: 4rem;
+    line-height: 0.9;
+    font-weight: 600;
+}
+
+.month-cost {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.month-cost-number {
+    font-size: 5rem;
+    line-height: 0.9;
+    font-weight: 700;
+}
+
+.yen {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.madori-text-2 {
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+.madori-m {
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+.ldk {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.ldk-no {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.oboi {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/*  ----------  build  ----------  */
+
+
+/*  ----------  gallery  ----------  */
+
+.gallery {
+    padding: 5rem 0;
+}
+
+.gallery-title {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+/*  ----------  gallery  ----------  */
+
+
+/*  ----------  location loc  ----------  */
+
+.fs_loc {
+    font-size: 2rem;
+}
+
+.loc-text {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 11rem;
+}
+
+.loc-text-sub {
+    font-size: 1.3rem;
+}
+
+.loc-banner-box {
+    position: relative;
+}
+
+.loc-time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+    padding-top: 0.2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 1px 1px 5px #231815;
+}
+
+.loc-wmin {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.loc-t {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.loc-banner-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+/*  ----------  location loc  ----------  */
+
+
+/*  ----------  access  ----------  */
+
+.map {
+    padding: 0 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 640px;
+}
+
+.access-map {
+    width: 100%;
+    height: 50vh;
+}
+
+
+/*  ----------  access  ----------  */
+
+
+/*  ----------  aguulga  ----------  */
+
+.table-bukken {
+    width: 60%;
+}
+
+.table-item {
+    border-bottom: 1px dashed #231815;
+    font-size: 0.9rem;
+}
+
+
+/*  ----------  aguulga  ----------  */
+
+
+/*  ----------  contact  ----------  */
+
+.contact-w {
+    width: 900px;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+th {
+    width: 230px;
+}
+
+th,
+td {
+    font-size: 0.9rem;
+}
+
+.submit {
+    border: 1px solid #231815;
+    width: 300px;
+    background: white;
+}
+
+.warning {
+    padding: 2rem 3rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    background: #fff;
+    border-radius: 15px;
+}
+
+
+/*  ----------  contact  ----------  */
+
+
+/*  ----------  footer  ----------  */
+
+.footer {
+    padding: 3rem 8rem 3rem 5rem;
+}
+
+.copy-right {
+    font-size: 0.9rem;
+}
+
+
+/*  ----------  footer  ----------  */
+
+.news_inner {
+    margin-top: 5rem;
+    padding-top: 4rem;
+    padding-right: 10rem;
+    padding-bottom: 4rem;
+    max-width: 1200px;
+    width: 90%;
+    background: #f2f4f6;
+}
+
+.news_inner .title {
+    font-size: 2rem;
+    border-image: unset;
+    transform: translateX(-6rem);
+}
+
+.news_inner div dl {
+    border-bottom: 1px solid #231815;
+    display: flex;
+    margin-bottom: unset;
+}
+
+.news_inner div dl dt {
+    padding: 20px 0 10px;
+    width: 15%;
+}
+
+.news_inner div dl dd {
+    padding: 20px 0 10px;
+    width: 85%;
+}
+
+.new_box {
+    padding-left: 4rem;
+    width: 900px;
+}
+
+#concept {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#concept:before {
+    content: "";
+    background: #d2ebea;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    z-index: -1;
+}
+
+#concept:after {
+    content: "";
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.concept_inner {
+    margin: 0 auto 0;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.kukaku_inner {
+    margin: 0 auto 0;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.kukaku_inner img {
+    width: 100%;
+}
+
+#built-up .gray-bg {
+    background-image: url(../images/line01.png?2);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 25px;
+}
+
+#built-up .title-build-text {
+    border-image: linear-gradient(to right, #e2b0af 50%, #e3cbcb 50%) 1;
+}
+
+.built-up_inner {
+    background: rgba(239, 207, 211, 0.5);
+}
+
+.built-up_inner .build-box {
+    background: unset;
+}
+
+.swiper-slide img {
+    transition: all ease 0.5s;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.1);
+}
+
+.table-bukken_inner {
+    margin: 0 auto;
+    width: 48%;
+}
+
+#location .loc-banner-text {
+    margin: 1rem 0 0;
+    padding: 0.5rem 0 0 1rem!important;
+    height: 42px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1399.98px) {
+    /*  ----------  utility class  ----------  */
+    /* main space */
+    .ts-main {
+        padding-top: 10rem;
+    }
+    .ts-main-second {
+        padding-top: 5rem;
+    }
+    .bs-main {
+        padding-bottom: 5rem;
+    }
+    .title-main {
+        margin-bottom: 4rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        border-bottom: 3px solid;
+    }
+    .title-sub {
+        width: 18rem;
+        height: 9rem;
+        background: var(--loc-color);
+        border-radius: 9rem 9rem 0 0;
+    }
+    .title-sub-text {
+        position: absolute;
+        font-size: 1.8rem;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .title-build {
+        position: relative;
+        margin: 0 auto;
+        width: 20rem;
+        height: 10rem;
+        background: white;
+        border-radius: 10rem 10rem 0 0;
+    }
+    .title-build-text {
+        position: absolute;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        width: 70%;
+        letter-spacing: 5px;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 3px solid;
+        border-image: linear-gradient(to right, #abbed0 50%, #c0d1df 50%) 1;
+    }
+    .img-btn {
+        width: 600px;
+    }
+    /* other */
+    .nawch {
+        width: 25%;
+    }
+    .tereg {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        transform: translateY(50%);
+        width: 10%;
+    }
+    .bear {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        transform: translateY(50%);
+        width: 10%;
+    }
+    .biuld-flower {
+        position: absolute;
+        top: 1%;
+        right: 10%;
+        width: 10%;
+    }
+    .woman {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        transform: translateY(20%);
+        width: 15%;
+        z-index: 1;
+    }
+    .golf {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        transform: translateY(-50%);
+        width: 10%;
+        z-index: 1;
+    }
+    .nawch2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        z-index: 1;
+    }
+    .famely {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 20%;
+        z-index: 1;
+    }
+    .flower {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        width: 10%;
+        z-index: 1;
+    }
+    .access-nawch {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 20%;
+        z-index: 1;
+    }
+    .child {
+        position: absolute;
+        top: 10%;
+        left: 12%;
+        width: 10%;
+        z-index: 1;
+    }
+    .nawch_l {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        z-index: 1;
+    }
+    .dad {
+        position: absolute;
+        bottom: -4%;
+        left: 10%;
+        width: 10%;
+        z-index: 1;
+    }
+    .isu {
+        position: absolute;
+        bottom: -4%;
+        right: 10%;
+        width: 20%;
+        z-index: 1;
+    }
+    /*  ----------  utility class  ----------  */
+    /*  ----------  top  ----------  */
+    .top {
+        background: url('../images/top/bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        height: 700px;
+        width: 100%;
+        z-index: -1;
+    }
+    /*  ----------  top  ----------  */
+    /*  ----------  news  ----------  */
+    .news_inner {
+        margin-top: 5rem;
+        padding-top: 4rem;
+        padding-right: 10rem;
+        padding-bottom: 4rem;
+        max-width: 900px;
+        width: 90%;
+        background: #f2f4f6;
+    }
+    .news_inner .title {
+        font-size: 2rem;
+        border-image: unset;
+        transform: translateX(-6rem);
+    }
+    .news_inner div dl {
+        border-bottom: 1px solid #231815;
+        display: flex;
+        margin-bottom: unset;
+    }
+    .news_inner div dl dt {
+        padding: 20px 0 10px;
+        width: 15%;
+    }
+    .news_inner div dl dd {
+        padding: 20px 0 10px;
+        width: 85%;
+    }
+    .new_box {
+        padding-left: 4rem;
+        width: 700px;
+    }
+    /*  ----------  news  ----------  */
+    /*  ----------  concept  ----------  */
+    .concept-sub-comment {
+        font-size: 1.5rem;
+    }
+    .concep-txt {
+        font-size: 1rem;
+        line-height: 2.5;
+        /*padding-left: 2rem;*/
+    }
+    .gift {
+        max-width: 700px;
+    }
+    /*  ----------  concept  ----------  */
+    /*  ----------  compartment  ----------  */
+    .compartment-box {
+        padding-left: 5rem;
+    }
+    .compartment-title {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .compartment-txt {
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+    .kukaku-img {
+        max-width: 400px;
+    }
+    /*  ----------  compartment  ----------  */
+    /*  ----------  build  ----------  */
+    .build-box {
+        position: relative;
+        background: var(--secondary-color);
+    }
+    .build-box-txt {
+        position: absolute;
+        left: 5rem;
+        bottom: 1rem;
+    }
+    .build-box-title {
+        font-size: 1.2rem;
+    }
+    .build-box-sub {
+        font-size: 1.5rem;
+        border-bottom: 1px solid #231815;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    }
+    .build-box-desc {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    /* madori text box */
+    .madori-img {
+        max-width: 300px;
+    }
+    .madori-text-box {
+        padding-left: 1rem;
+    }
+    .madori-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    .madori-cost {
+        font-size: 1rem;
+    }
+    .madori-plan {
+        background: #231815;
+        color: white;
+        padding: 0.3rem 0.5rem;
+    }
+    .madori-cost-number {
+        font-size: 3.5rem;
+        line-height: 0.9;
+        font-weight: 600;
+    }
+    .month-cost {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+    .month-cost-number {
+        font-size: 3rem;
+        line-height: 0.9;
+        font-weight: 700;
+    }
+    .yen {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .madori-text-2 {
+        font-size: 1rem;
+        line-height: 1.8;
+        font-weight: 600;
+    }
+    .madori-m {
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+    .ldk {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .ldk-no {
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    .oboi {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    /*  ----------  build  ----------  */
+    /*  ----------  gallery  ----------  */
+    .gallery {
+        padding: 5rem 0 0;
+        position: relative;
+        z-index: 0;
+    }
+    .gallery:before {
+        content: "";
+        background: rgba(239, 207, 211, 0.5);
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .gallery-title {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    /*  ----------  gallery  ----------  */
+    /*  ----------  location loc  ----------  */
+    .loc-text {
+        position: relative;
+        padding-top: 3rem;
+        padding-bottom: 11rem;
+    }
+    .loc-text-sub {
+        font-size: 1.3rem;
+    }
+    .loc-banner-box {
+        position: relative;
+    }
+    .loc-time {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateY(50%);
+        padding-top: 0.2rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 1px 1px 5px #231815;
+    }
+    .loc-wmin {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .loc-t {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .loc-banner-text {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    /*  ----------  location loc  ----------  */
+    /*  ----------  access  ----------  */
+    .map {
+        padding: 0 0;
+    }
+    .map iframe {
+        width: 100%;
+        height: 640px;
+    }
+    .access-map {
+        width: 100%;
+        height: 50vh;
+    }
+    /*  ----------  access  ----------  */
+    /*  ----------  aguulga  ----------  */
+    .table-bukken {
+        width: 60%;
+    }
+    .table-item {
+        border-bottom: 1px dashed #231815;
+        font-size: 0.9rem;
+    }
+    /*  ----------  aguulga  ----------  */
+    /*  ----------  contact  ----------  */
+    .contact-w {
+        width: 900px;
+    }
+    .contact-title {
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+    th {
+        width: 230px;
+    }
+    th,
+    td {
+        font-size: 0.9rem;
+    }
+    .submit {
+        border: 1px solid #231815;
+        width: 300px;
+        background: white;
+    }
+    /*  ----------  contact  ----------  */
+    /*  ----------  footer  ----------  */
+    .footer {
+        padding: 3rem 8rem 3rem 5rem;
+    }
+    .copy-right {
+        font-size: 0.9rem;
+    }
+    /*  ----------  footer  ----------  */
+}
+
+@media (max-width: 1199.98px) {
+    /*  ----------  news  ----------  */
+    .news_inner {
+        margin-top: 5rem;
+        padding-top: 4rem;
+        padding-right: 10rem;
+        padding-bottom: 4rem;
+        max-width: 700px;
+        width: 90%;
+        background: #f2f4f6;
+    }
+    .news_inner .title {
+        font-size: 1.5rem;
+        border-image: unset;
+        transform: translateX(-6rem);
+    }
+    .news_inner div dl {
+        border-bottom: 1px solid #231815;
+        display: flex;
+        margin-bottom: unset;
+    }
+    .news_inner div dl dt {
+        padding: 20px 0 10px;
+        width: 15%;
+    }
+    .news_inner div dl dd {
+        padding: 20px 0 10px;
+        width: 85%;
+    }
+    .new_box {
+        padding-left: 4rem;
+        width: 600px;
+    }
+    /*  ----------  news  ----------  */
+}
+
+@media (max-width: 991.98px) {
+    /*  ----------  utility class  ----------  */
+    /* main space */
+    .ts-main {
+        padding-top: 5rem;
+    }
+    .ts-main-second {
+        padding-top: 5rem;
+    }
+    .bs-main {
+        padding-bottom: 5rem;
+    }
+    .title-main {
+        margin-bottom: 4rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        border-bottom: 3px solid;
+    }
+    .title-sub {
+        width: 20rem;
+        height: 10rem;
+        background: var(--loc-color);
+        border-radius: 10rem 10rem 0 0;
+    }
+    .title-sub-text {
+        position: absolute;
+        font-size: 2rem;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .title-build {
+        position: relative;
+        margin: 0 auto;
+        width: 20rem;
+        height: 10rem;
+        background: white;
+        border-radius: 10rem 10rem 0 0;
+    }
+    .title-build-text {
+        position: absolute;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        width: 70%;
+        letter-spacing: 5px;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 3px solid;
+        border-image: linear-gradient(to right, #abbed0 50%, #c0d1df 50%) 1;
+    }
+    .img-btn {
+        width: 600px;
+    }
+    /* other */
+    .nawch {
+        width: 25%;
+    }
+    .tereg {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        transform: translateY(50%);
+        width: 10%;
+    }
+    .bear {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        transform: translateY(50%);
+        width: 10%;
+    }
+    .biuld-flower {
+        position: absolute;
+        top: 1%;
+        right: 10%;
+        width: 10%;
+    }
+    .woman {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        transform: translateY(20%);
+        width: 15%;
+        z-index: 1;
+    }
+    .golf {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        transform: translateY(-50%);
+        width: 10%;
+        z-index: 1;
+    }
+    .nawch2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        z-index: 1;
+    }
+    .famely {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 20%;
+        z-index: 1;
+    }
+    .flower {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        width: 10%;
+        z-index: 1;
+    }
+    .access-nawch {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 20%;
+        z-index: 1;
+    }
+    .child {
+        position: absolute;
+        top: 10%;
+        left: 12%;
+        width: 10%;
+        z-index: 1;
+    }
+    .nawch_l {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        z-index: 1;
+    }
+    .dad {
+        position: absolute;
+        bottom: -4%;
+        left: 10%;
+        width: 10%;
+        z-index: 1;
+    }
+    .isu {
+        position: absolute;
+        bottom: -4%;
+        right: 10%;
+        width: 20%;
+        z-index: 1;
+    }
+    /*  ----------  utility class  ----------  */
+    /*  ----------  news  ----------  */
+    .news_inner {
+        margin-top: 0;
+        padding: 2rem;
+        max-width: 700px;
+        width: 100%;
+        background: #f2f4f6;
+    }
+    .news_inner .title {
+        font-size: 1.2rem;
+        border-image: unset;
+        transform: translateX(0);
+    }
+    .news_inner div dl {
+        border-bottom: 1px solid #231815;
+        display: flex;
+        margin-bottom: unset;
+    }
+    .news_inner div dl dt {
+        padding: 20px 0 10px;
+        width: 15%;
+    }
+    .news_inner div dl dd {
+        padding: 20px 0 10px;
+        width: 85%;
+    }
+    .new_box {
+        padding-left: 0;
+        max-width: 600px;
+        width: 90%;
+    }
+    /*  ----------  news  ----------  */
+    /*  ----------  concept  ----------  */
+    .concept-sub-comment {
+        font-size: 1.5rem;
+    }
+    .concep-txt {
+        font-size: 1rem;
+        line-height: 2.5;
+        padding-left: 2rem;
+    }
+    .gift {
+        max-width: 700px;
+    }
+    /*  ----------  concept  ----------  */
+    /*  ----------  compartment  ----------  */
+    .compartment-box {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+    .compartment-title {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .compartment-txt {
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+    .kukaku-img {
+        max-width: 400px;
+    }
+    /*  ----------  compartment  ----------  */
+    /*  ----------  build  ----------  */
+    .build-box {
+        position: relative;
+        background: var(--secondary-color);
+    }
+    .build-box-txt {
+        position: relative;
+        padding-top: 5rem;
+        left: 5rem;
+        bottom: 1rem;
+    }
+    .build-box-title {
+        font-size: 1.2rem;
+    }
+    .build-box-sub {
+        display: inline-block;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #231815;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    }
+    .build-box-desc {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    /* madori text box */
+    .madori-img {
+        max-width: 300px;
+    }
+    .madori-text-box {
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .madori-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    .madori-cost {
+        font-size: 1rem;
+    }
+    .madori-plan {
+        background: #231815;
+        color: white;
+        padding: 0.3rem 0.5rem;
+    }
+    .madori-cost-number {
+        font-size: 3.5rem;
+        line-height: 0.9;
+        font-weight: 600;
+    }
+    .month-cost {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+    .month-cost-number {
+        font-size: 3rem;
+        line-height: 0.9;
+        font-weight: 700;
+    }
+    .yen {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .madori-text-2 {
+        font-size: 1rem;
+        line-height: 1.8;
+        font-weight: 600;
+    }
+    .madori-m {
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+    .ldk {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .ldk-no {
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    .oboi {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    /*  ----------  build  ----------  */
+    /*  ----------  gallery  ----------  */
+    .gallery {
+        background: #efcfd3;
+        padding: 5rem 0;
+    }
+    .gallery-title {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    /*  ----------  gallery  ----------  */
+    /*  ----------  location loc  ----------  */
+    .loc-text {
+        position: relative;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    .loc-text-sub {
+        font-size: 1.3rem;
+    }
+    .loc-banner-box {
+        position: relative;
+    }
+    .loc-time {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateY(50%);
+        padding-top: 0.2rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 1px 1px 5px #231815;
+    }
+    .loc-wmin {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .loc-t {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .loc-banner-text {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    /*  ----------  location loc  ----------  */
+    /*  ----------  access  ----------  */
+    .map {
+        padding: 5rem 0;
+    }
+    .access-map {
+        width: 100%;
+        height: 50vh;
+    }
+    /*  ----------  access  ----------  */
+    /*  ----------  aguulga  ----------  */
+    .table-bukken {
+        width: 60%;
+    }
+    .table-item {
+        border-bottom: 1px dashed #231815;
+        font-size: 0.9rem;
+    }
+    /*  ----------  aguulga  ----------  */
+    /*  ----------  contact  ----------  */
+    .contact-w {
+        width: 900px;
+    }
+    .contact-title {
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+    th {
+        width: 230px;
+    }
+    th,
+    td {
+        font-size: 0.9rem;
+    }
+    .submit {
+        border: 1px solid #231815;
+        width: 300px;
+        background: white;
+    }
+    /*  ----------  contact  ----------  */
+    /*  ----------  footer  ----------  */
+    .footer {
+        padding: 3rem 8rem 3rem 5rem;
+    }
+    .copy-right {
+        font-size: 0.9rem;
+    }
+    /*  ----------  footer  ----------  */
+}
+
+@media (max-width: 767.98px) {
+    /*  ----------  utility class  ----------  */
+    /* main space */
+    .ts-main {
+        padding-top: 2rem;
+    }
+    .ts-main-second {
+        padding-top: 2rem;
+    }
+    .bs-main {
+        padding-bottom: 2rem;
+    }
+    .title-main {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        border-bottom: 3px solid;
+    }
+    .title-sub {
+        width: 10rem;
+        height: 5rem;
+        background: var(--loc-color);
+        border-radius: 5rem 5rem 0 0;
+    }
+    .title-sub-text {
+        position: absolute;
+        font-size: 1.2rem;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .title-build {
+        position: relative;
+        margin: 0 auto;
+        width: 15rem;
+        height: 7.5rem;
+        background: white;
+        border-radius: 7.5rem 7.5rem 0 0;
+    }
+    .title-build-text {
+        position: absolute;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        width: 70%;
+        letter-spacing: 5px;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 3px solid;
+        border-image: linear-gradient(to right, #abbed0 50%, #c0d1df 50%) 1;
+    }
+    .img-btn {
+        width: 70%;
+    }
+    .sidebtn {
+        position: fixed;
+        top: 50%;
+        bottom: auto;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 0;
+        width: 40px;
+        z-index: 100;
+        text-align: right;
+    }
+    .sidebtn>a {
+        display: block;
+        /* line-height: 4; */
+        width: 40px;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        margin-top: 2px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        border: none;
+        height: auto;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        -webkit-text-orientation: upright;
+        text-orientation: upright;
+        letter-spacing: 0.1em;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        background: #e85471;
+        opacity: 1;
+    }
+    .scrollToTopBtn {
+        background: none;
+        color: #fff;
+        mix-blend-mode: difference;
+        cursor: pointer;
+        bottom: 20px;
+        right: 0.5rem;
+        z-index: 100;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all .5s ease
+    }
+    .scrollToTopBtn i {
+        font-size: 2rem;
+    }
+    .showBtn {
+        opacity: 1;
+        transform: translateY(0)
+    }
+    /* other */
+    .nawch {
+        width: 25%;
+    }
+    .tereg {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        transform: translateY(50%);
+        width: 10%;
+    }
+    .bear {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        transform: translateY(50%);
+        width: 15%;
+    }
+    .biuld-flower {
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        width: 15%;
+    }
+    .woman {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        transform: translateY(20%);
+        width: 20%;
+        z-index: 1;
+    }
+    .golf {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        transform: translateY(-50%);
+        width: 10%;
+        z-index: 1;
+    }
+    .nawch2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        z-index: 1;
+    }
+    .famely {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 20%;
+        z-index: 1;
+    }
+    .flower {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        width: 10%;
+        z-index: 1;
+    }
+    .access-nawch {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 20%;
+        z-index: 1;
+    }
+    .child {
+        position: absolute;
+        top: 10%;
+        left: 12%;
+        width: 10%;
+        z-index: 1;
+    }
+    .nawch_l {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        z-index: 1;
+    }
+    .dad {
+        position: absolute;
+        bottom: -4%;
+        left: 10%;
+        width: 10%;
+        z-index: 1;
+    }
+    .isu {
+        position: absolute;
+        bottom: -4%;
+        right: 10%;
+        width: 20%;
+        z-index: 1;
+    }
+    /*  ----------  utility class  ----------  */
+    /*  ----------  top  ----------  */
+    .sp-logo {
+        width: 90%;
+    }
+    /*  ----------  top  ----------  */
+    /*  ----------  concept  ----------  */
+    .line_txt {
+        font-size: 0.8rem;
+        line-height: 1.8;
+    }
+    .line_txt2 {
+        font-size: 0.7rem;
+        line-height: 1.8;
+    }
+    .concept-sub-comment {
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+    .concep-txt {
+        font-size: 0.8rem;
+        line-height: 2.5;
+        padding-left: 0;
+    }
+    .gift {
+        width: 80%;
+    }
+    /*  ----------  concept  ----------  */
+    /*  ----------  compartment  ----------  */
+    .compartment-box {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+    .compartment-title {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .compartment-txt {
+        font-size: 0.9rem;
+        line-height: 2;
+    }
+    .kukaku-img {
+        max-width: 80%;
+    }
+    /*  ----------  compartment  ----------  */
+    /*  ----------  build  ----------  */
+    .build-box {
+        position: relative;
+        background: var(--secondary-color);
+    }
+    .build-box-txt {
+        position: relative;
+        padding-top: 2.5rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        left: auto;
+        bottom: 1rem;
+    }
+    .build-box-title {
+        font-size: 1.2rem;
+    }
+    .build-box-sub {
+        display: inline-block;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #231815;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    }
+    .build-box-desc {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    /* madori text box */
+    .madori-img {
+        max-width: 250px;
+    }
+    .madori-text-box {
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .madori-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    .madori-cost {
+        font-size: 0.8rem;
+    }
+    .madori-plan {
+        background: #231815;
+        color: white;
+        padding: 0.3rem 0.5rem;
+    }
+    .madori-cost-number {
+        font-size: 2rem;
+        line-height: 0.9;
+        font-weight: 600;
+    }
+    .month-cost {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+    .yen {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .madori-text-2 {
+        font-size: 0.8rem;
+        line-height: 1.8;
+        font-weight: 600;
+    }
+    .madori-m {
+        font-size: 1em;
+        line-height: 1.8;
+    }
+    .ldk {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .ldk-no {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .oboi {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    /*  ----------  build  ----------  */
+    /*  ----------  gallery  ----------  */
+    .gallery {
+        background: #efcfd3;
+        padding: 2rem 0;
+    }
+    .gallery-title {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    /*  ----------  gallery  ----------  */
+    /*  ----------  location loc  ----------  */
+    .loc-text {
+        position: relative;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    .loc-text-sub {
+        font-size: 1rem;
+    }
+    .loc-banner-box {
+        position: relative;
+    }
+    .loc-time {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateY(50%);
+        padding-top: 0.2rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 1px 1px 5px #231815;
+    }
+    .loc-wmin {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .loc-t {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .loc-banner-text {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    /*  ----------  location loc  ----------  */
+    /*  ----------  access  ----------  */
+    .map {
+        padding: 2rem 0;
+    }
+    .access-map {
+        width: 100%;
+        height: 50vh;
+    }
+    /*  ----------  access  ----------  */
+    /*  ----------  aguulga  ----------  */
+    .table-bukken {
+        width: 90%;
+    }
+    .table-item {
+        border-bottom: 1px dashed #231815;
+        font-size: 0.9rem;
+    }
+    /*  ----------  aguulga  ----------  */
+    /*  ----------  contact  ----------  */
+    .contact-w {
+        width: 90%;
+    }
+    .contact-title {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .form-main-txt {
+        font-size: 0.8rem;
+    }
+    th {
+        width: 120px;
+        background-color: #abbed0;
+    }
+    th,
+    td {
+        font-size: 0.75rem;
+    }
+    input,
+    textarea {
+        border-radius: 5px;
+    }
+    .submit {
+        border: 1px solid #231815;
+        width: 300px;
+        background: white;
+    }
+    .warning {
+        padding: 1rem 0rem;
+        font-size: 0.9rem;
+        background: none;
+        border-radius: 15px;
+    }
+    /*  ----------  contact  ----------  */
+    /*  ----------  footer  ----------  */
+    .footer {
+        padding: 1rem;
+    }
+    .copy-right {
+        font-size: 0.9rem;
+    }
+    /*  ----------  footer  ----------  */
+}
+
+@media (max-width: 767.98px) {
+    .fs_loc {
+        font-size: 1.3rem;
+    }
+    .top {
+        background: url('../images/top/bg_sp.jpg');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        height: 90vh;
+        width: 100%;
+        z-index: -1;
+    }
+    .top_info_01 {
+        position: absolute;
+        width: 80%;
+        bottom: 90%;
+        left: 6%;
+    }
+    .top_info_02 {
+        position: absolute;
+        width: 50%;
+        bottom: 75%;
+        left: 4%;
+    }
+    .top_info_03 {
+        position: absolute;
+        width: 80%;
+        bottom: 18%;
+        left: 0;
+    }
+    .top_info_04 {
+        position: absolute;
+        width: 80%;
+        bottom: 7%;
+        left: 3.5%;
+    }
+    .top_info_05 {
+        position: absolute;
+        width: 100%;
+        bottom: 1%;
+        left: 0;
+    }
+    .top_info_06 {
+        position: absolute;
+        width: 15%;
+        bottom: 10%;
+        right: 3%;
+    }
+    .news_inner div dl {
+        flex-wrap: wrap;
+    }
+    .news_inner div dl dt {
+        width: 100%;
+    }
+    .news_inner div dl dd {
+        width: 100%;
+    }
+    .map iframe {
+        height: 320px;
+    }
+    .table-bukken_inner {
+        width: 90%;
+    }
+}
