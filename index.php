@@ -246,19 +246,25 @@ if (isset($_POST['back']) && $_POST['back']) {
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <picture>
-                        <!-- <source class="d-block w-100" media="(max-width: 767.98px)" srcset="images/"> -->
+                        <source class="d-block w-100" media="(max-width: 575.98px)"
+                            srcset="images/top/slide/011_sp.png">
+                        <source class="d-block w-100" media="(max-width: 767.98px)" srcset="images/top/slide/01_sp.png">
                         <img src="images/top/slide/01.png" class="d-block w-100" alt="...">
                     </picture>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <picture>
-                        <!-- <source class="d-block w-100" media="(max-width: 767.98px)" srcset="images/top_slide02.png"> -->
+                        <source class="d-block w-100" media="(max-width: 575.98px)"
+                            srcset="images/top/slide/021_sp.png">
+                        <source class="d-block w-100" media="(max-width: 767.98px)" srcset="images/top/slide/02_sp.png">
                         <img src="images/top/slide/02.png" class="d-block w-100" alt="...">
                     </picture>
                 </div>
                 <div class="carousel-item">
                     <picture>
-                        <!-- <source class="d-block w-100" media="(max-width: 767.98px)" srcset="images/top_slide03.png"> -->
+                        <source class="d-block w-100" media="(max-width: 575.98px)"
+                            srcset="images/top/slide/031_sp.png">
+                        <source class="d-block w-100" media="(max-width: 767.98px)" srcset="images/top/slide/03_sp.png">
                         <img src="images/top/slide/03.png" class="d-block w-100" alt="...">
                     </picture>
                 </div>
@@ -299,27 +305,33 @@ if (isset($_POST['back']) && $_POST['back']) {
             <div class="sawarabiGothic new_box">
                 <dl>
                     <dt>2023.8.1</dt>
-                    <dd class="notoSerifJP">ウィズママヴィレッジ 辰巳台東　全16区画販売開始</dd>
+                    <dd class="notoSerifJP">8月1日市原市辰巳台東
+                        <br class="d-block d-md-none">全１６区画分譲地、販売開始！！
+                        <br class="d-block d-md-none">詳しくは当社まで！！
+                    </dd>
                 </dl>
-                <dl>
+                <!-- <dl>
                     <dt>2023.8.1</dt>
                     <dd class="notoSerifJP">ウィズママヴィレッジ 辰巳台東　全16区画販売開始</dd>
                 </dl>
                 <dl>
                     <dt>2023.8.1</dt>
                     <dd class="notoSerifJP">ウィズママヴィレッジ 辰巳台東　全16区画販売開始</dd>
-                </dl>
+                </dl> -->
             </div>
         </div>
     </section>
     <section class="position-relative" id="concept">
 
         <div class="container">
-            <div class="text-center ts-main">
-                <img style="max-width: 100%;" src="./images/top/line.jpg" alt="">
-                <h5 class="sawarabiGothic mt-3 line_txt"><b>プライバシーポリシーをお読みいただき同意の上、「LINEで更新通知を受け取る」ボタンを押してください。</b>
-                </h5>
-            </div>
+            <a class="text-decoration-none text-dark" href="https://liff.line.me/1657306045-29L5qWO7?redirect_to=lineTalk&registration_source_id=siXRiUcWctQRVKP5
+">
+                <div class="text-center ts-main">
+                    <img style="max-width: 100%;" src="./images/top/line.jpg" alt="">
+                    <h5 class="sawarabiGothic mt-3 line_txt"><b>プライバシーポリシーをお読みいただき同意の上、「LINEで更新通知を受け取る」ボタンを押してください。</b>
+                    </h5>
+                </div>
+            </a>
             <div class="ts-main text-center">
                 <p class="title-main a-OTFFolkProR">CONCEPT
                     <br><span class="title-main-line"></span>
@@ -332,7 +344,10 @@ if (isset($_POST['back']) && $_POST['back']) {
                         交通の利便性・飲食店などが多い地域でありながら、<br>駅から少し離れると住宅地があり、学校も徒歩圏にあるためファミリーにおすすめの地域です。</p>
                 </div>
                 <div>
-                    <img class="w-100 mt-4 pb-4" src="images/image01.png" alt="">
+                    <picture>
+                        <source class="w-100 mt-4 pb-4" media="(max-width: 767.98px)" srcset="images/image01_sp.png">
+                        <img class="w-100 mt-4 pb-4" src="images/image01.png" alt="">
+                    </picture>
                     <p class="text-start">程よく田舎で、自然遊びもできるのが魅力です。治安なども良く子育て環境良好。</p>
                 </div>
                 <div>
@@ -341,97 +356,6 @@ if (isset($_POST['back']) && $_POST['back']) {
             </div>
         </div>
     </section>
-
-    <!-- <section class="position-relative" id="built-up">
-        <div>
-            <div class="gray-bg mb-5 ts-main-second text-center">
-                <div class="title-build">
-                    <p class="title-build-text">建物紹介
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="built-up_inner">
-            <div class="container-fluid">
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="build-box">
-                        <div class="build-box-txt">
-                            <p class="build-box-title mb-1 fw-bold">with mama</p>
-                            <p class="build-box-sub">スマートスタイルプラン</p>
-                            <p class="build-box-desc">with mama スマートスタイルの家。
-                                <br>それは、広すぎず、狭すぎず、
-                                <br class="d-block d-md-none">必要な収納スペースや暮らしやすい
-                                <br>アイデアがたっぷり詰まったおうちです。
-                                <br>設計士がそれぞれ土地に
-                                <br class="d-block d-md-none">最適な間取りプランがいいのかを監修。
-                                <br>安心してお選びくださいませ。
-                                <br class="d-block d-md-none">全区画ご用意しております！
-                            </p>
-                        </div>
-                    </div>
-                    <div class="pt-3 pt-md-0">
-                        <img class="w-100" src="images/image03.png" alt="スマートスタイルプラン">
-                    </div>
-                </div>
-            </div>
-            <div class="container py-3 py-md-5">
-                <div class="row row-cols-1 row-cols-lg-2 py-md-5 align-items-center">
-                    <div class="text-center">
-                        <img class="madori-img" src="images/madori01.png" alt="間取り図">
-                    </div>
-                    <div class="madori-text-box">
-                        <p class="madori-text">区画：　<span class="main-txt">No.1</span>
-                            <br>状況：　ご提案可能
-                            <br>坪数：　26.05坪
-                        </p>
-                        <p class="madori-cost d-flex align-items-end"><span class="madori-plan">セットプラン価格</span>
-                            <span
-                                class="madori-cost-number m-0 sawarabiGothic main-txt mx-2">2,780</span><span>万円〈税込〉</span>
-                        </p>
-                        <p class="month-cost"><span class="main-txt">月々参考返済例</span> <span
-                                class="madori-cost-number m-0 sawarabiGothic main-txt mx-2">72,780</span><span
-                                class="yen">円</span></p>
-                        <p class="madori-text-2">（土地費用、建物本体価格、建物諸費用の合計金額）
-                            <br>※除くものは、外構・諸費用
-                            <br>・金利0.55％、期間35年、ボーナスなし、
-                            <br class="d-block d-md-none">頭金含まずで住宅ローンは計算になります。
-                        </p>
-                        <ul class="madori-m">
-                            <li>敷地面積 186.2㎡（56.3坪）</li>
-                            <li>建物面積 86.1㎡（26.05坪）</li>
-                        </ul>
-                        <p><span class="ldk sawarabiGothic"><span class="ldk-no">3</span>LDK</span><span
-                                class="oboi archivo">＋ウォークインクローゼット</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="gallery position-relative mb-5">
-                <p class="text-center gallery-title">GALLERY</p>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="w-100" src="images/slider/gallery-01.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="w-100" src="images/slider/gallery-02.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="w-100" src="images/slider/gallery-03.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="w-100" src="images/slider/gallery-04.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="w-100" src="images/slider/gallery-05.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section class="position-relative mt-5 pt-5" id="location">
         <div class="container">
             <div class="text-center">
@@ -586,28 +510,14 @@ if (isset($_POST['back']) && $_POST['back']) {
         </div>
     </section>
     <section class="container p-md-5">
-        <a class="text-decoration-none text-dark" href="#contact">
+        <a class="text-decoration-none text-dark" href="https://liff.line.me/1657306045-29L5qWO7?redirect_to=lineTalk&registration_source_id=siXRiUcWctQRVKP5
+">
             <img class="w-100 px-md-5" src="images/top/line.jpg" alt="LINE">
             <h5 class="sawarabiGothic mt-3 mb-0 text-center line_txt2">
                 <b>プライバシーポリシーをお読みいただき同意の上、「LINEで更新通知を受け取る」ボタンを押してください。</b>
             </h5>
         </a>
     </section>
-    <!-- <section class="position-relative mb-5" id="access">
-        <div class="container">
-            <div class="text-center">
-                <p class="title-main a-OTFFolkProR">アクセス
-                    <br><span class="title-main-line"></span>
-                </p>
-            </div>
-        </div>
-        <div class="map container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12990.32271668077!2d140.14321305693335!3d35.51464542636212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602299b1c0c35f2d%3A0x3b073e8d2aead400!2z44CSMjkwLTAwMDMg5Y2D6JGJ55yM5biC5Y6f5biC6L6w5bez5Y-w5p2x!5e0!3m2!1sja!2sjp!4v1689209150627!5m2!1sja!2sjp"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section> -->
     <section>
         <div class="container" id="kukaku">
             <div class="ts-main-second text-center">
@@ -618,6 +528,80 @@ if (isset($_POST['back']) && $_POST['back']) {
             <div class="kukaku_inner">
                 <img class="mb-5 pb-md-5" src="images/kukaku01.png" alt="">
             </div>
+        </div>
+    </section>
+    <section class="position-relative" id="plan">
+        <div class="ts-main-second text-center">
+            <p class="title-main a-OTFFolkProR">建築プラン
+                <br><span class="title-main-line"></span>
+            </p>
+        </div>
+        <div class="bg_built built-up a-OTFFolkProR">
+            <div class="container">
+                <div class="row g-0 pb-5 mx-auto">
+                    <div class="col-9 col-md-5 col-lg-3 pe-5">
+                        <p class="border-bottom border-1 border-dark pb-3">with mama
+                            <br>スマートスタイルプラン
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <p class="lh-lg biult_fs_09">with mama スマートスタイルの家。
+                            <br>それは、広すぎず、狭すぎず、必要な収納スペースや暮らしやすいアイデアがたっぷり詰まったおうちです。
+                            <br>設計士がそれぞれ土地に最適な間取りプランがいいのかを監修。安心してお選びくださいませ。全区画ご用意しております！
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container row align-items-center gy-4 g-lg-0 mx-auto">
+                <div class="col-12 col-lg-5 text-center">
+                    <img class="madori01" src="images/madori01.png" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="lh-lg fw-bold">
+                        区画：　<span class="main-txt">No.2</span>
+                        <br>状況：　ご提案可能
+                        <br>坪数：　30坪
+                    </div>
+                    <div class="pt-3 fw-bold">
+                        <p class="d-flex align-items-end"><span class="h_txt">土地</span><span
+                                class="price archivo fw-bold main-txt">980</span><span>万円</span><span
+                                class="h_txt ps-1 ps-md-3">建物</span><span
+                                class="price archivo fw-bold main-txt">1,837</span><span
+                                class="text-center en"><span>〈税込〉</span>
+                                <br><span>万円</span></span>
+                        </p>
+                        <p class="d-flex align-items-end py-3"><span
+                                class="bg-dark text-white pb-1 px-1 plan_price">セットプラン価格</span><span
+                                class="price2 archivo fw-bold main-txt ps-2">2,817</span><span
+                                class="plan_price">万円</span><span class="plan_price">〈税込〉</span>
+                        </p>
+                        <p><span class="main-txt biult_fs_13">月々参考返済例</span><span class=" price3 archivo fw-bold
+                                main-txt">73,749</span><span class="biult_fs_13">円</span>
+                        </p>
+                        <p class="lh-lg biult_fs_09">（土地費用、建物本体価格、建物諸費用の合計金額）
+                            <br>※除くものは、外構・諸費用
+                            <br>・金利0.55％、期間35年、ボーナスなし、頭金含まずで住宅ローンは計算になります。
+                        </p>
+                        <p class="lh-lg biult_fs_12">●敷地面積 163.01㎡（49.31坪）
+                            <br>●建物面積 99.36㎡（30.04坪）
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="position-relative pb-md-5" id="access">
+        <div class="container ts-main-second">
+            <div class="text-center">
+                <p class="title-main a-OTFFolkProR">アクセス
+                    <br><span class="title-main-line"></span>
+                </p>
+            </div>
+        </div>
+        <div class="map container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.8009308139276!2d140.150186!3d35.509200299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602299ad046cce75%3A0xa04f1a528a7581ad!2z44CSMjkwLTAwMDMg5Y2D6JGJ55yM5biC5Y6f5biC6L6w5bez5Y-w5p2x77yV5LiB55uu77yU4oiS77yR!5e0!3m2!1sja!2sjp!4v1690275773270!5m2!1sja!2sjp
+" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
     <section class="position-relative pt-5" id="gaiyo">
@@ -635,7 +619,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">交　通</div>
-                        <div class="col-8">R内房線「八幡宿」駅車で13分</div>
+                        <div class="col-8">JR内房線「八幡宿」駅車で13分</div>
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">販売価格</div>
@@ -663,7 +647,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">都市計画</div>
-                        <div class="col-8">市街化区域</div>
+                        <div class="col-8">市街化調整区域</div>
                     </div>
                 </div>
 
@@ -719,11 +703,14 @@ if (isset($_POST['back']) && $_POST['back']) {
             <div>
                 <p class="text-center contact-title a-OTFFolkProR">資料請求／見学予約フォーム</p>
             </div>
-            <div class="pt-3 pb-5">
-                <img class="w-100" src="images/top/line.jpg" alt="line">
-                <p class="sawarabiGothic mt-3 text-center line_txt2">
-                    <b>プライバシーポリシーをお読みいただき同意の上、「LINEで更新通知を受け取る」ボタンを押してください。</b>
-            </div>
+            <a class="text-decoration-none text-dark" href="https://liff.line.me/1657306045-29L5qWO7?redirect_to=lineTalk&registration_source_id=siXRiUcWctQRVKP5
+">
+                <div class="pt-3 pb-5">
+                    <img class="w-100" src="images/top/line.jpg" alt="line">
+                    <p class="sawarabiGothic mt-3 text-center line_txt2">
+                        <b>プライバシーポリシーをお読みいただき同意の上、「LINEで更新通知を受け取る」ボタンを押してください。</b>
+                </div>
+            </a>
             <!--div>
                 <p class="text-danger">※予約受付時間 午前10時から17時までです。</p>
             </div-->
@@ -741,7 +728,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                     <tbody>
                         <tr id="timesh" class="">
                             <th class="text-center py-3" scope="row">予約店舗</th>
-                            <td class="py-3 lh-lg">withmama 市原店
+                            <td class="py-3 lh-lg">withmama 市原店 千葉県市原市国分寺台中央7-19-1
                             </td>
                         </tr>
                         <tr>
@@ -860,7 +847,9 @@ if (isset($_POST['back']) && $_POST['back']) {
                         </div>
                     </div>
                     <div class="col-12 text-center">
-                        <input type="submit" name="back" value="戻る" class="btn btn-secondary btn-md px-5 me-3" />
+                        <input type="submit" name="back" value="戻る"
+                            class="btn btn-secondary btn-md px-5 me-md-3 mb-2 mb-md-0" />
+                        <br class="d-block d-md-none">
                         <input type="submit" name="send" value="送信" class="btn btn-secondary btn-md px-5" />
                     </div>
                 </div>

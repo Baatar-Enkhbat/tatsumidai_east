@@ -354,6 +354,10 @@
     color: #ec7592;
 }
 
+.bg_built {
+    background: #efcfd3;
+}
+
 
 /*  ----------  utility class  ----------  */
 
@@ -484,124 +488,54 @@
 
 /*  ----------  build  ----------  */
 
-.build-box {
-    position: relative;
-    background: var(--secondary-color);
+.built-up {
+    padding: 5rem 0;
 }
 
-.build-box-txt {
-    position: absolute;
-    left: 10rem;
-    bottom: 2rem;
+.price {
+    font-size: 2.6rem;
+    line-height: 0.8;
 }
 
-.build-box-title {
-    font-size: 1.2rem;
+.price2 {
+    font-size: 2.8rem;
+    line-height: 0.7;
 }
 
-.build-box-sub {
-    font-size: 1.5rem;
-    border-bottom: 1px solid #231815;
-    padding-bottom: 1rem;
-    font-weight: 600;
-}
-
-.build-box-desc {
-    font-size: 1rem;
-    line-height: 2.5;
-}
-
-
-/* madori text box */
-
-.madori-img {
-    max-width: 300px;
-}
-
-.madori-text-box {
-    padding-left: 1rem;
-}
-
-.madori-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.madori-cost {
-    font-size: 1.2rem;
-}
-
-.madori-plan {
-    background: #231815;
-    color: white;
-    padding: 0.3rem 0.5rem;
-}
-
-.madori-cost-number {
-    font-size: 4rem;
-    line-height: 0.9;
-    font-weight: 600;
-}
-
-.month-cost {
-    font-size: 1.3rem;
-    margin-top: 2rem;
-}
-
-.month-cost-number {
-    font-size: 5rem;
-    line-height: 0.9;
-    font-weight: 700;
-}
-
-.yen {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.madori-text-2 {
-    font-size: 1rem;
-    line-height: 1.8;
-    font-weight: 600;
-}
-
-.madori-m {
-    font-size: 1.3em;
-    line-height: 1.8;
-}
-
-.ldk {
+.price3 {
     font-size: 3rem;
-    font-weight: 600;
+    line-height: 0.6;
 }
 
-.ldk-no {
-    font-size: 3.5rem;
-    font-weight: 600;
+.h_txt {
+    writing-mode: tb-rl;
+    /* IE用 */
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
 }
 
-.oboi {
+.en {
+    font-size: 0.8rem;
+}
+
+.madori01 {
+    max-width: 75%;
+}
+
+.biult_fs_09 {
+    font-size: 0.9rem;
+}
+
+.biult_fs_13 {
+    font-size: 1.3rem;
+}
+
+.biult_fs_12 {
     font-size: 1.2rem;
-    font-weight: 600;
 }
 
 
 /*  ----------  build  ----------  */
-
-
-/*  ----------  gallery  ----------  */
-
-.gallery {
-    padding: 5rem 0;
-}
-
-.gallery-title {
-    font-size: 3rem;
-    padding-bottom: 2rem;
-}
-
-
-/*  ----------  gallery  ----------  */
 
 
 /*  ----------  location loc  ----------  */
@@ -1091,86 +1025,6 @@ td {
     }
     /*  ----------  compartment  ----------  */
     /*  ----------  build  ----------  */
-    .build-box {
-        position: relative;
-        background: var(--secondary-color);
-    }
-    .build-box-txt {
-        position: absolute;
-        left: 5rem;
-        bottom: 1rem;
-    }
-    .build-box-title {
-        font-size: 1.2rem;
-    }
-    .build-box-sub {
-        font-size: 1.5rem;
-        border-bottom: 1px solid #231815;
-        padding-bottom: 1rem;
-        font-weight: 600;
-    }
-    .build-box-desc {
-        font-size: 0.9rem;
-        line-height: 1.8;
-    }
-    /* madori text box */
-    .madori-img {
-        max-width: 300px;
-    }
-    .madori-text-box {
-        padding-left: 1rem;
-    }
-    .madori-text {
-        font-size: 1rem;
-        line-height: 1.8;
-    }
-    .madori-cost {
-        font-size: 1rem;
-    }
-    .madori-plan {
-        background: #231815;
-        color: white;
-        padding: 0.3rem 0.5rem;
-    }
-    .madori-cost-number {
-        font-size: 3.5rem;
-        line-height: 0.9;
-        font-weight: 600;
-    }
-    .month-cost {
-        font-size: 1.1rem;
-        margin-top: 2rem;
-    }
-    .month-cost-number {
-        font-size: 3rem;
-        line-height: 0.9;
-        font-weight: 700;
-    }
-    .yen {
-        font-size: 1.4rem;
-        font-weight: 600;
-    }
-    .madori-text-2 {
-        font-size: 1rem;
-        line-height: 1.8;
-        font-weight: 600;
-    }
-    .madori-m {
-        font-size: 1.1em;
-        line-height: 1.8;
-    }
-    .ldk {
-        font-size: 3rem;
-        font-weight: 600;
-    }
-    .ldk-no {
-        font-size: 3.5rem;
-        font-weight: 600;
-    }
-    .oboi {
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
     /*  ----------  build  ----------  */
     /*  ----------  gallery  ----------  */
     .gallery {
@@ -1534,89 +1388,6 @@ td {
     }
     /*  ----------  compartment  ----------  */
     /*  ----------  build  ----------  */
-    .build-box {
-        position: relative;
-        background: var(--secondary-color);
-    }
-    .build-box-txt {
-        position: relative;
-        padding-top: 5rem;
-        left: 5rem;
-        bottom: 1rem;
-    }
-    .build-box-title {
-        font-size: 1.2rem;
-    }
-    .build-box-sub {
-        display: inline-block;
-        font-size: 1.5rem;
-        border-bottom: 1px solid #231815;
-        padding-bottom: 1rem;
-        font-weight: 600;
-    }
-    .build-box-desc {
-        font-size: 0.9rem;
-        line-height: 1.8;
-    }
-    /* madori text box */
-    .madori-img {
-        max-width: 300px;
-    }
-    .madori-text-box {
-        padding-left: 1rem;
-        padding-top: 2rem;
-    }
-    .madori-text {
-        font-size: 1rem;
-        line-height: 1.8;
-    }
-    .madori-cost {
-        font-size: 1rem;
-    }
-    .madori-plan {
-        background: #231815;
-        color: white;
-        padding: 0.3rem 0.5rem;
-    }
-    .madori-cost-number {
-        font-size: 3.5rem;
-        line-height: 0.9;
-        font-weight: 600;
-    }
-    .month-cost {
-        font-size: 1.1rem;
-        margin-top: 2rem;
-    }
-    .month-cost-number {
-        font-size: 3rem;
-        line-height: 0.9;
-        font-weight: 700;
-    }
-    .yen {
-        font-size: 1.4rem;
-        font-weight: 600;
-    }
-    .madori-text-2 {
-        font-size: 1rem;
-        line-height: 1.8;
-        font-weight: 600;
-    }
-    .madori-m {
-        font-size: 1.1em;
-        line-height: 1.8;
-    }
-    .ldk {
-        font-size: 3rem;
-        font-weight: 600;
-    }
-    .ldk-no {
-        font-size: 3.5rem;
-        font-weight: 600;
-    }
-    .oboi {
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
     /*  ----------  build  ----------  */
     /*  ----------  gallery  ----------  */
     .gallery {
@@ -1967,86 +1738,41 @@ td {
     }
     /*  ----------  compartment  ----------  */
     /*  ----------  build  ----------  */
-    .build-box {
-        position: relative;
-        background: var(--secondary-color);
+    .built-up {
+        padding: 3rem 0;
     }
-    .build-box-txt {
-        position: relative;
-        padding-top: 2.5rem;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        left: auto;
-        bottom: 1rem;
+    .price {
+        font-size: 2.4rem;
+        line-height: 0.8;
     }
-    .build-box-title {
-        font-size: 1.2rem;
-    }
-    .build-box-sub {
-        display: inline-block;
-        font-size: 1.5rem;
-        border-bottom: 1px solid #231815;
-        padding-bottom: 1rem;
-        font-weight: 600;
-    }
-    .build-box-desc {
-        font-size: 0.9rem;
-        line-height: 1.8;
-    }
-    /* madori text box */
-    .madori-img {
-        max-width: 250px;
-    }
-    .madori-text-box {
-        padding-left: 1rem;
-        padding-top: 2rem;
-    }
-    .madori-text {
-        font-size: 1rem;
-        line-height: 1.8;
-    }
-    .madori-cost {
-        font-size: 0.8rem;
-    }
-    .madori-plan {
-        background: #231815;
-        color: white;
-        padding: 0.3rem 0.5rem;
-    }
-    .madori-cost-number {
-        font-size: 2rem;
-        line-height: 0.9;
-        font-weight: 600;
-    }
-    .month-cost {
-        font-size: 1.1rem;
-        margin-top: 1rem;
-    }
-    .yen {
-        font-size: 1rem;
-        font-weight: 600;
-    }
-    .madori-text-2 {
-        font-size: 0.8rem;
-        line-height: 1.8;
-        font-weight: 600;
-    }
-    .madori-m {
-        font-size: 1em;
-        line-height: 1.8;
-    }
-    .ldk {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .ldk-no {
+    .price2 {
         font-size: 2.5rem;
-        font-weight: 600;
+        line-height: 0.7;
     }
-    .oboi {
+    .price3 {
+        font-size: 2.8rem;
+        line-height: 0.6;
+    }
+    .plan_price {
+        font-size: 0.7rem;
+    }
+    .h_txt {
+        font-size: 0.9rem;
+    }
+    .en {
+        font-size: 0.7rem;
+    }
+    .madori01 {
+        max-width: 75%;
+    }
+    .biult_fs_09 {
+        font-size: 0.7rem;
+    }
+    .biult_fs_13 {
         font-size: 1rem;
-        font-weight: 600;
+    }
+    .biult_fs_12 {
+        font-size: 1rem;
     }
     /*  ----------  build  ----------  */
     /*  ----------  gallery  ----------  */
