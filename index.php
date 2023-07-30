@@ -627,7 +627,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">最多価格</div>
-                        <div class="col-8">1280万円・1390万円</div>
+                        <div class="col-8">1280万円、1390万円、1150万円、1200万円</div>
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">販売区画数</div>
@@ -639,7 +639,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">地　目</div>
-                        <div class="col-8">雑種地</div>
+                        <div class="col-8">宅地</div>
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">土地権利</div>
@@ -647,7 +647,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">都市計画</div>
-                        <div class="col-8">市街化調整区域</div>
+                        <div class="col-8">市街化区域</div>
                     </div>
                 </div>
 
@@ -670,11 +670,11 @@ if (isset($_POST['back']) && $_POST['back']) {
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">設　備</div>
-                        <div class="col-8">公営水道・プロパンガス・浄化槽</div>
+                        <div class="col-8">公営水道、都市ガス、浄化槽</div>
                     </div>
                     <div class="table-item row py-3">
-                        <div class="col-4 text-center">現　状</div>
-                        <div class="col-8">更地</div>
+                        <div class="col-4 text-center">現　況</div>
+                        <div class="col-8">上物あり（解体完了11月中旬予定）</div>
                     </div>
                     <div class="table-item row py-3">
                         <div class="col-4 text-center">引渡時期</div>
@@ -723,7 +723,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                 </div>
                 <?php endif;?>
             </div>
-            <form action="index.php#contact" method="post">
+            <form action="index.php" method="post">
                 <table class="table table-bordered bg-white border-dark a-OTFFolkProR">
                     <tbody>
                         <tr id="timesh" class="">
@@ -815,53 +815,68 @@ if (isset($_POST['back']) && $_POST['back']) {
             </form>
             <?php elseif ($mode == 'confirm'): ?>
             <!-- 確認画面 -->
-            <form action="index.php#contact" method="post">
-                <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
-                <div class="row g-3 p-3 bg-white rounded">
-                    <div class="col-4">お問い合わせ内容</div>
-                    <div class="col-8"><?php echo $_SESSION['contact'] ?></div>
-                    <?php if (!empty($_SESSION['time'])): ?>
-                    <div class="col-4">ご希望時間</div>
-                    <div class="col-8"><?php echo $_SESSION['time'] ?></div>
-                    <?php endif;?>
-                    <div class="col-4">名前</div>
-                    <div class="col-8"><?php echo $_SESSION['fullname'] ?></div>
-                    <div class="col-4">ふりがな</div>
-                    <div class="col-8"><?php echo $_SESSION['furigana'] ?></div>
-                    <div class="col-4">名前</div>
-                    <div class="col-8"><?php echo $_SESSION['phone'] ?></div>
-                    <div class="col-4">Eメール</div>
-                    <div class="col-8"><?php echo $_SESSION['email'] ?></div>
-                    <div class="col-4">郵便番号</div>
-                    <div class="col-8"><?php echo $_SESSION['zipcode'] ?></div>
-                    <div class="col-4">都道府県</div>
-                    <div class="col-8"><?php echo $tdfk[$_SESSION['address']] ?></div>
-                    <div class="col-4">市町村番地</div>
-                    <div class="col-8"><?php echo $_SESSION['addressLast'] ?></div>
-                    <div class="col-12">
-                        <div>
-                            その他、ご要望などご自由にご記入ください
-                        </div>
-                        <div>
-                            <?php echo nl2br($_SESSION['message']) ?>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center">
-                        <input type="submit" name="back" value="戻る"
-                            class="btn btn-secondary btn-md px-5 me-md-3 mb-2 mb-md-0" />
-                        <br class="d-block d-md-none">
-                        <input type="submit" name="send" value="送信" class="btn btn-secondary btn-md px-5" />
-                    </div>
+            <div class="form_panel">
+                <div class="text-center py-5">
+                    <img src="images/logo.png" alt="">
                 </div>
-            </form>
+                <div class="form_panel_in">
+                    <form action="index.php#contact" method="post">
+                        <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
+                        <div class="row g-3 p-3 bg-white rounded">
+                            <div class="col-4">お問い合わせ内容</div>
+                            <div class="col-8"><?php echo $_SESSION['contact'] ?></div>
+                            <?php if (!empty($_SESSION['time'])): ?>
+                            <div class="col-4">ご希望時間</div>
+                            <div class="col-8"><?php echo $_SESSION['time'] ?></div>
+                            <?php endif;?>
+                            <div class="col-4">名前</div>
+                            <div class="col-8"><?php echo $_SESSION['fullname'] ?></div>
+                            <div class="col-4">ふりがな</div>
+                            <div class="col-8"><?php echo $_SESSION['furigana'] ?></div>
+                            <div class="col-4">名前</div>
+                            <div class="col-8"><?php echo $_SESSION['phone'] ?></div>
+                            <div class="col-4">Eメール</div>
+                            <div class="col-8"><?php echo $_SESSION['email'] ?></div>
+                            <div class="col-4">郵便番号</div>
+                            <div class="col-8"><?php echo $_SESSION['zipcode'] ?></div>
+                            <div class="col-4">都道府県</div>
+                            <div class="col-8"><?php echo $tdfk[$_SESSION['address']] ?></div>
+                            <div class="col-4">市町村番地</div>
+                            <div class="col-8"><?php echo $_SESSION['addressLast'] ?></div>
+                            <div class="col-12">
+                                <div>
+                                    その他、ご要望などご自由にご記入ください
+                                </div>
+                                <div style="overflow-x: hidden;">
+                                    <?php echo nl2br($_SESSION['message']) ?>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <input type="submit" name="back" value="戻る"
+                                    class="btn btn-secondary btn-md px-5 me-md-3 mb-2 mb-md-0" />
+                                <br class="d-block d-md-none">
+                                <input type="submit" name="send" value="送信" class="btn btn-secondary btn-md px-5" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <?php else: ?>
             <!-- 完了画面 -->
-            <div class="text-center py-5 bg-white rounded">
-                <h4 class="main-txt lh-lg">
-                    送信しました。
-                    <br>お問い合わせ
-                    <br class="d-block d-md-none">ありがとうございました。
-                </h4>
+            <div class="form_panel">
+                <div class="text-center py-5">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="form_panel_in">
+                    <div class="text-center py-5 bg-white rounded">
+                        <h4 class="main-txt lh-lg">
+                            送信しました。
+                            <br>お問い合わせ
+                            <br class="d-block d-md-none">ありがとうございました。
+                        </h4>
+                        <a class="text-decoration-none btn btn-outline-primary" href="index.php">トップへ</a>
+                    </div>
+                </div>
             </div>
             <?php endif;?>
             <div class="container mt-4">
